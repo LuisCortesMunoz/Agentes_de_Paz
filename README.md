@@ -1,6 +1,6 @@
 # Agentes de Paz
 
-Experiencia web interactiva para la materia **Violencia y Construcción de Paz**. A través de 15 escenarios cotidianos (escuela, familia, amistades, redes sociales, sociedad y reflexión personal), cada participante reflexiona sobre cómo responde ante el conflicto, la violencia y la injusticia, y recibe un resultado orientativo sobre su potencial como agente de paz.
+Experiencia web interactiva para la materia **Violencia y Construcción de Paz**. A través de 10 escenarios cotidianos (escuela, familia, amistades, redes sociales, sociedad y reflexión personal), cada participante reflexiona sobre cómo responde ante el conflicto, la violencia y la injusticia, y recibe un resultado orientativo sobre su potencial como agente de paz.
 
 Hecho con HTML, CSS y JavaScript puros: no necesita backend, base de datos ni servicios de pago, y funciona en GitHub Pages.
 

@@ -176,20 +176,7 @@ const QUESTIONS = [
     insight: "El control y el aislamiento son señales de violencia en la pareja. Escuchar sin juzgar y acompañar a buscar apoyo especializado suele ser más eficaz —y más seguro— que presionar o confrontar."
   },
   {
-    id: "q6", category: "redes", concept: "Responsabilidad del espectador",
-    title: "El meme del grupo",
-    scenario: "En el grupo de WhatsApp del salón circula una foto editada de un compañero para burlarse de su apariencia. Ya tiene muchas reacciones de risa.",
-    prompt: "¿Qué haces?",
-    options: [
-      { id: "a", text: "No la reenvío y escribo en el grupo que burlarse así no está bien.", scores: { emp: 2, dia: 2, nov: 3, jus: 3, res: 3 } },
-      { id: "b", text: "Salgo del grupo en silencio para no ser parte de eso.", scores: { emp: 1, dia: 0, nov: 2, jus: 1, res: 0 } },
-      { id: "c", text: "Reacciono con un emoji para no quedar mal con los demás.", scores: { emp: 0, dia: 0, nov: 1, jus: 0, res: 0 } },
-      { id: "d", text: "Le escribo en privado al compañero para saber cómo está y, si quiere, lo acompaño a reportarlo.", scores: { emp: 3, dia: 2, nov: 3, jus: 2, res: 3 } }
-    ],
-    insight: "En los grupos digitales la responsabilidad se diluye: «si todos se ríen, no pasa nada». Romper el silencio en el grupo y acompañar a la persona afectada son caminos complementarios."
-  },
-  {
-    id: "q7", category: "sociedad", concept: "Violencia estructural",
+    id: "q6", category: "sociedad", concept: "Violencia estructural",
     title: "La calle sin luz",
     scenario: "En tu ciudad, la zona donde viven familias de menos recursos no tiene alumbrado público y han ocurrido varios asaltos. En una reunión vecinal, alguien dice: «Es su culpa por vivir ahí».",
     prompt: "¿Qué postura tomas?",
@@ -202,46 +189,7 @@ const QUESTIONS = [
     insight: "La violencia estructural se expresa en desigualdades de servicios y oportunidades. Culpar a quien la padece la invisibiliza; la organización colectiva busca transformarla."
   },
   {
-    id: "q8", category: "escuela", concept: "Comunicación asertiva",
-    title: "Te culpan injustamente",
-    scenario: "En una exposición en equipo, un compañero te culpa frente a todo el grupo de un error que en realidad cometió él.",
-    prompt: "¿Cómo reaccionas?",
-    options: [
-      { id: "a", text: "Respiro, le pido hablar en privado después de la clase y expongo los hechos con calma.", scores: { emp: 2, dia: 3, nov: 3, jus: 2 } },
-      { id: "b", text: "Lo desmiento en ese momento, elevando la voz para que todos sepan la verdad.", scores: { emp: 0, dia: 1, nov: 1, jus: 1 } },
-      { id: "c", text: "Acepto la culpa para no generar más conflicto.", scores: { emp: 1, dia: 0, nov: 1, jus: 0 } },
-      { id: "d", text: "No le digo nada, pero después hablo mal de él con otras personas.", scores: { emp: 0, dia: 0, nov: 0, jus: 0 } }
-    ],
-    insight: "Defender tu verdad no requiere atacar, y callar no es lo mismo que resolver. Separar a la persona del problema y exponer los hechos con calma protege tu dignidad y la relación."
-  },
-  {
-    id: "q9", category: "amistad", concept: "Mediación",
-    title: "Dos amigos distanciados",
-    scenario: "Dos de tus amigos dejaron de hablarse después de un malentendido. Ambos te buscan por separado para contarte su versión y te piden ayuda.",
-    prompt: "¿Qué haces?",
-    options: [
-      { id: "a", text: "Les propongo reunirnos; acordamos hablar con respeto, cada quien sin interrupciones, y buscamos juntos un acuerdo.", scores: { emp: 3, dia: 3, nov: 3 } },
-      { id: "b", text: "Llevo y traigo los mensajes de uno al otro para no exponerlos.", scores: { emp: 1, dia: 1, nov: 2 } },
-      { id: "c", text: "Les digo con sinceridad quién creo que tiene la razón.", scores: { emp: 0, dia: 1, nov: 1 } },
-      { id: "d", text: "Les sugiero olvidar el tema y seguir como si nada.", scores: { emp: 1, dia: 0, nov: 1 } }
-    ],
-    insight: "La mediación funciona con reglas claras, imparcialidad y protagonismo de las partes: quien media facilita el encuentro, no dicta la solución."
-  },
-  {
-    id: "q10", category: "sociedad", concept: "Justicia social",
-    title: "Una cuota que excluye",
-    scenario: "Tu escuela anuncia un aumento de cuotas que obligaría a varios estudiantes a abandonar sus estudios.",
-    prompt: "¿Cómo participas?",
-    options: [
-      { id: "a", text: "Participo en una asamblea y ayudo a elaborar propuestas concretas (becas, cuotas escalonadas) para presentarlas a la dirección.", scores: { dia: 3, nov: 3, jus: 3, res: 3 } },
-      { id: "b", text: "Comparto publicaciones de indignación en mis redes.", scores: { dia: 0, nov: 2, jus: 1, res: 1 } },
-      { id: "c", text: "No participo: siempre ha sido así y nada va a cambiar.", scores: { dia: 0, nov: 1, jus: 0, res: 0 } },
-      { id: "d", text: "Apoyo tomar las instalaciones y bloquear el acceso hasta que cancelen el aumento.", scores: { dia: 0, nov: 1, jus: 2, res: 2 } }
-    ],
-    insight: "Exigir justicia es legítimo; la forma importa. La participación organizada y propositiva amplía las posibilidades de lograr cambios sin excluir ni dañar a terceros."
-  },
-  {
-    id: "q11", category: "sociedad", concept: "Violencia directa",
+    id: "q7", category: "sociedad", concept: "Violencia directa",
     title: "Gritos al otro lado de la pared",
     scenario: "Desde hace semanas escuchas gritos, golpes y llanto en la casa de tus vecinos. Hoy vuelve a ocurrir.",
     prompt: "¿Qué haces?",
@@ -254,7 +202,7 @@ const QUESTIONS = [
     insight: "La violencia en el hogar no es un asunto privado. Si hay riesgo inmediato, llamar a emergencias es prioritario; enfrentar directamente al agresor puede ponerte en peligro a ti y a la víctima."
   },
   {
-    id: "q12", category: "reflexion", concept: "Paz positiva",
+    id: "q8", category: "reflexion", concept: "Paz positiva",
     title: "¿Qué es la paz para ti?",
     scenario: "No hay trampa: elige la afirmación que se acerca más a lo que realmente piensas.",
     prompt: "La paz es, sobre todo…",
@@ -267,7 +215,7 @@ const QUESTIONS = [
     insight: "Johan Galtung distingue la paz negativa (ausencia de violencia directa) de la paz positiva (justicia social, satisfacción de necesidades básicas y relaciones de respeto). Ambas importan, pero la segunda exige actuar."
   },
   {
-    id: "q13", category: "reflexion", concept: "Gestión emocional",
+    id: "q9", category: "reflexion", concept: "Gestión emocional",
     title: "Cuando alguien te ofende",
     scenario: "Piensa en la última vez que alguien te dijo algo hiriente. Sé honesto contigo.",
     prompt: "¿Qué sueles hacer?",
@@ -280,7 +228,7 @@ const QUESTIONS = [
     insight: "Ni explotar ni reprimir: reconocer la emoción, tomar distancia y elegir la respuesta es una habilidad que se entrena, no un rasgo fijo de personalidad."
   },
   {
-    id: "q14", category: "reflexion", concept: "Violencia cultural",
+    id: "q10", category: "reflexion", concept: "Violencia cultural",
     title: "«Son solo bromas»",
     scenario: "En tu grupo de amigos son comunes los chistes sobre personas de otra región, con alguna discapacidad o de la diversidad sexual. Cuando alguien se incomoda, le dicen: «Son solo bromas».",
     prompt: "¿Qué piensas y qué haces?",
@@ -291,19 +239,6 @@ const QUESTIONS = [
       { id: "d", text: "Depende: entre amigos de confianza todo se vale.", scores: { emp: 0, dia: 1, jus: 0 } }
     ],
     insight: "El humor que ridiculiza a grupos históricamente discriminados forma parte de la violencia cultural: hace que la exclusión parezca normal o inofensiva."
-  },
-  {
-    id: "q15", category: "redes", concept: "Diálogo en la diferencia",
-    title: "Una discusión que se calienta",
-    scenario: "En una publicación sobre un tema social, alguien opina totalmente distinto a ti y su tono comienza a volverse agresivo.",
-    prompt: "¿Cómo continúas?",
-    options: [
-      { id: "a", text: "Le pido mantener el respeto y le pregunto por qué piensa así; si sigue agrediendo, me retiro.", scores: { emp: 3, dia: 3, nov: 3 } },
-      { id: "b", text: "Respondo con datos y argumentos para demostrar que está equivocado.", scores: { emp: 1, dia: 2, nov: 2 } },
-      { id: "c", text: "Lo bloqueo de inmediato: no vale la pena.", scores: { emp: 1, dia: 0, nov: 2 } },
-      { id: "d", text: "Le respondo con la misma intensidad para que vea que no me dejo.", scores: { emp: 0, dia: 0, nov: 0 } }
-    ],
-    insight: "Dialogar no es convencer. Preguntar con curiosidad y poner límites al maltrato —incluso retirarte— son formas de cuidar la conversación y de cuidarte."
   }
 ];
 
@@ -355,7 +290,7 @@ const LOADING_MESSAGES = [
 ];
 
 /* ---------------- Estado y almacenamiento ---------------- */
-const STORAGE_KEY = "agentesDePaz.v1";
+const STORAGE_KEY = "agentesDePaz.v2";
 const LETTERS = ["A", "B", "C", "D", "E"];
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
