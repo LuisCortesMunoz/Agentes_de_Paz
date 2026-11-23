@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Agentes de Paz · ¿Tus decisiones construyen paz?</title>
+  <meta name="description" content="Experiencia interactiva de reflexión para descubrir tu potencial como agente de paz. Materia: Violencia y Construcción de Paz.">
+  <meta name="theme-color" content="#0b1726">
+  <meta property="og:title" content="Agentes de Paz · ¿Tus decisiones construyen paz?">
+  <meta property="og:description" content="15 situaciones reales, 5 dimensiones de la construcción de paz. Descubre tu potencial como agente de paz.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230b1726'/%3E%3Ccircle cx='26' cy='32' r='14' fill='none' stroke='%233cc8b4' stroke-width='5'/%3E%3Ccircle cx='38' cy='32' r='14' fill='none' stroke='%23ffb38a' stroke-width='5'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+
+  <!-- Fondo atmosférico -->
+  <div class="aurora" aria-hidden="true">
+    <span class="blob b1"></span>
+    <span class="blob b2"></span>
+    <span class="blob b3"></span>
+    <span class="grain"></span>
+  </div>
+
+  <header class="site-header">
+    <button class="brand" id="brandLink" type="button" aria-label="Agentes de Paz, ir al inicio">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="16" cy="20" r="10" fill="none" stroke="var(--teal)" stroke-width="3"/>
+        <circle cx="24" cy="20" r="10" fill="none" stroke="var(--dawn)" stroke-width="3"/>
+      </svg>
+      <span class="brand-text">Agentes <b>de Paz</b></span>
+    </button>
+    <span class="course-tag">Violencia y Construcción de Paz</span>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ BIENVENIDA ============ -->
+    <section id="screen-welcome" class="screen is-active" aria-labelledby="welcome-title">
+      <div class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="pulse-dot" aria-hidden="true"></span> Experiencia reflexiva · 15 escenarios</p>
+          <h1 id="welcome-title" class="display">¿Tus decisiones <em>construyen paz</em>?</h1>
+          <p class="lead">
+            Ser agente de paz no significa evitar los conflictos, sino <strong>transformarlos</strong>:
+            escuchar, dialogar, reconocer la dignidad de cada persona y actuar frente a la violencia
+            —la que se ve y la que no se ve— para construir relaciones más justas.
+          </p>
+
+          <div class="cta-row">
+            <button id="btnStart" class="btn btn-primary btn-lg" type="button">
+              <span>Descubre tu potencial como agente de paz</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <button id="btnResume" class="btn btn-ghost" type="button" hidden></button>
+          </div>
+
+          <ul class="meta-row">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              6–8 minutos
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+              Tus respuestas no salen de tu dispositivo
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg>
+              Responde lo que <em>realmente</em> harías
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 400 400" class="peace-orbit">
+            <defs>
+              <radialGradient id="gCore" cx="50%" cy="45%" r="60%">
+                <stop offset="0%" stop-color="#ffe3cf"/>
+                <stop offset="55%" stop-color="#ffb38a"/>
+                <stop offset="100%" stop-color="#ff9f8a" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="gStem" x1="0" x2="1">
+                <stop offset="0" stop-color="#3cc8b4"/>
+                <stop offset="1" stop-color="#9be3c9"/>
+              </linearGradient>
+            </defs>
+            <circle cx="200" cy="200" r="190" class="orbit-ring r1"/>
+            <circle cx="200" cy="200" r="150" class="orbit-ring r2"/>
+            <circle cx="200" cy="200" r="110" class="orbit-ring r3"/>
+            <circle cx="200" cy="200" r="120" fill="url(#gCore)" opacity=".35"/>
+            <g class="encounter">
+              <circle cx="172" cy="200" r="62" fill="#3cc8b4" opacity=".55"/>
+              <circle cx="228" cy="200" r="62" fill="#ffb38a" opacity=".55"/>
+            </g>
+            <!-- Rama de olivo -->
+            <g class="olive" fill="none" stroke="url(#gStem)" stroke-width="3" stroke-linecap="round">
+              <path d="M120 270 C 170 240, 230 200, 290 130"/>
+              <g fill="#bff0dd" stroke="none">
+                <ellipse cx="150" cy="248" rx="16" ry="6" transform="rotate(-60 150 248)"/>
+                <ellipse cx="162" cy="262" rx="16" ry="6" transform="rotate(10 162 262)"/>
+                <ellipse cx="190" cy="222" rx="16" ry="6" transform="rotate(-70 190 222)"/>
+                <ellipse cx="205" cy="236" rx="16" ry="6" transform="rotate(5 205 236)"/>
+                <ellipse cx="232" cy="190" rx="16" ry="6" transform="rotate(-75 232 190)"/>
+                <ellipse cx="248" cy="204" rx="16" ry="6" transform="rotate(0 248 204)"/>
+                <ellipse cx="270" cy="150" rx="15" ry="6" transform="rotate(-80 270 150)"/>
+                <ellipse cx="284" cy="163" rx="15" ry="6" transform="rotate(-10 284 163)"/>
+              </g>
+            </g>
+            <!-- Cinco dimensiones orbitando -->
+            <g class="orbit-dots">
+              <circle cx="200" cy="10" r="9" fill="#ff9f8a"/>
+              <circle cx="380.7" cy="141.3" r="9" fill="#7cc4ff"/>
+              <circle cx="311.7" cy="353.7" r="9" fill="#3cc8b4"/>
+              <circle cx="88.3" cy="353.7" r="9" fill="#b9a7ff"/>
+              <circle cx="19.3" cy="141.3" r="9" fill="#f5cf6b"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <div class="learn-grid">
+        <article class="panel triangle-panel">
+          <p class="panel-kicker">Concepto clave</p>
+          <h2 class="panel-title">El triángulo de la violencia</h2>
+          <p class="panel-sub">Johan Galtung propone que la violencia no solo se ve: también se esconde en estructuras y en la cultura. Explora cada vértice.</p>
+          <div class="triangle" role="group" aria-label="Tipos de violencia">
+            <svg viewBox="0 0 300 250" aria-hidden="true" class="triangle-lines">
+              <path d="M150 28 L272 222 L28 222 Z"/>
+              <line x1="20" y1="120" x2="280" y2="120" class="waterline"/>
+            </svg>
+            <span class="tri-label tri-visible" aria-hidden="true">Visible</span>
+            <span class="tri-label tri-invisible" aria-hidden="true">Invisible</span>
+            <button class="tri-node n-direct is-active" type="button" data-violence="directa" aria-pressed="true">Directa</button>
+            <button class="tri-node n-struct" type="button" data-violence="estructural" aria-pressed="false">Estructural</button>
+            <button class="tri-node n-cult" type="button" data-violence="cultural" aria-pressed="false">Cultural</button>
+          </div>
+          <p class="tri-info" id="triInfo" aria-live="polite"></p>
+        </article>
+
+        <article class="panel dims-panel">
+          <p class="panel-kicker">Lo que vas a explorar</p>
+          <h2 class="panel-title">Cinco dimensiones de la construcción de paz</h2>
+          <ul class="dim-list" id="dimList"></ul>
+          <p class="panel-note">No hay respuestas perfectas: cada escenario admite matices. Lo valioso es reconocer cómo sueles actuar.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ EVALUACIÓN ============ -->
+    <section id="screen-quiz" class="screen" hidden aria-label="Evaluación">
+      <div class="quiz-top">
+        <button id="btnBack" class="icon-btn" type="button" aria-label="Pregunta anterior">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+        </button>
+        <div class="progress-wrap">
+          <div class="progress-meta">
+            <span id="progressLabel">Escenario 1 de 15</span>
+            <span id="progressPct">0%</span>
+          </div>
+          <div class="progress" id="progressBar" role="progressbar" aria-label="Progreso de la evaluación" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+            <span class="progress-fill" id="progressFill"></span>
+          </div>
+        </div>
+        <button id="btnExit" class="icon-btn" type="button" aria-label="Pausar y volver al inicio (tu progreso se guarda)">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+
+      <article class="q-card" id="qCard">
+        <div class="q-head">
+          <span class="q-icon" id="qIcon" aria-hidden="true"></span>
+          <div class="q-tags">
+            <span class="q-cat" id="qCat"></span>
+            <span class="q-concept" id="qConcept"></span>
+          </div>
+        </div>
+        <h2 class="q-title" id="qTitle" tabindex="-1"></h2>
+        <p class="q-scenario" id="qScenario"></p>
+        <p class="q-prompt" id="qPrompt"></p>
+        <div class="options" id="qOptions" role="radiogroup" aria-labelledby="qPrompt"></div>
+      </article>
+
+      <div class="quiz-actions">
+        <p class="kbd-hint"><kbd>1</kbd>–<kbd>4</kbd> para elegir · <kbd>Enter</kbd> para continuar</p>
+        <button id="btnNext" class="btn btn-primary" type="button" disabled>
+          <span id="btnNextLabel">Continuar</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ============ CARGANDO ============ -->
+    <section id="screen-loading" class="screen" hidden aria-live="polite">
+      <div class="loader" aria-hidden="true">
+        <span class="loader-ring lr1"></span>
+        <span class="loader-ring lr2"></span>
+        <span class="loader-ring lr3"></span>
+        <span class="loader-core"></span>
+      </div>
+      <p class="loading-text" id="loadingText">Analizando tus decisiones…</p>
+    </section>
+
+    <!-- ============ RESULTADOS ============ -->
+    <section id="screen-results" class="screen" hidden aria-labelledby="resultTitle">
+      <div class="petals" id="petals" aria-hidden="true"></div>
+
+      <div class="result-hero reveal" style="--d:0">
+        <div class="score-ring">
+          <svg viewBox="0 0 220 220" aria-hidden="true">
+            <defs>
+              <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#3cc8b4"/>
+                <stop offset="50%" stop-color="#7cc4ff"/>
+                <stop offset="100%" stop-color="#ffb38a"/>
+              </linearGradient>
+            </defs>
+            <circle class="ring-bg" cx="110" cy="110" r="96"/>
+            <circle class="ring-fg" id="ringFg" cx="110" cy="110" r="96"/>
+          </svg>
+          <div class="score-center">
+            <span class="score-num" id="scoreNum">0</span>
+            <span class="score-of">de 100</span>
+          </div>
+          <span class="ring-glow" aria-hidden="true"></span>
+        </div>
+        <div class="result-headline">
+          <span class="level-badge" id="levelBadge"></span>
+          <h1 class="display result-title" id="resultTitle" tabindex="-1"></h1>
+          <p class="result-msg" id="resultMsg"></p>
+          <p class="sr-only" id="scoreSr"></p>
+        </div>
+      </div>
+
+      <div class="result-grid">
+        <article class="panel reveal" style="--d:1">
+          <p class="panel-kicker">Tu mapa de paz</p>
+          <h2 class="panel-title">Cinco dimensiones</h2>
+          <div class="radar" id="radar"></div>
+          <ul class="dim-bars" id="dimBars"></ul>
+        </article>
+
+        <div class="stack">
+          <article class="panel panel-strength reveal" style="--d:2">
+            <p class="panel-kicker">Lo que ya construyes</p>
+            <h2 class="panel-title">Tus fortalezas</h2>
+            <ul class="insight-list" id="strengths"></ul>
+          </article>
+          <article class="panel panel-growth reveal" style="--d:3">
+            <p class="panel-kicker">Hacia dónde crecer</p>
+            <h2 class="panel-title">Áreas de mejora</h2>
+            <ul class="insight-list" id="growth"></ul>
+          </article>
+        </div>
+      </div>
+
+      <article class="panel recs-panel reveal" style="--d:4">
+        <p class="panel-kicker" id="recsKicker">Para tu vida cotidiana</p>
+        <h2 class="panel-title">Tres acciones concretas</h2>
+        <ol class="recs" id="recs"></ol>
+      </article>
+
+      <article class="panel details-panel reveal" style="--d:5">
+        <details>
+          <summary>
+            <span>Revisa tus escenarios y claves de reflexión</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <ol class="review" id="review"></ol>
+        </details>
+        <details>
+          <summary>
+            <span>¿Cómo se calculó tu resultado?</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+          </summary>
+          <div class="method">
+            <p>Cada alternativa aporta de <strong>0 a 3 puntos</strong> a una o varias dimensiones, según qué tanto contribuye a construir paz en ese escenario. Muchas opciones suman en una dimensión y restan en otra (por ejemplo, defender a alguien con insultos muestra sentido de justicia, pero no es una respuesta no violenta), y varios escenarios tienen más de una respuesta valiosa.</p>
+            <p>Para cada dimensión se suman tus puntos y se dividen entre el máximo posible en los escenarios donde esa dimensión está presente: así obtienes un porcentaje de 0 a 100. Tu <strong>puntuación global</strong> es el promedio de las cinco dimensiones, de modo que todas pesan lo mismo.</p>
+            <p>El resultado es una herramienta de reflexión, no un diagnóstico científico ni una valoración definitiva de quién eres.</p>
+          </div>
+        </details>
+      </article>
+
+      <figure class="final-quote reveal" style="--d:6">
+        <svg class="quote-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M10 34c0-8 4-14 12-18l2 3c-5 3-7 6-7 9h5v10H10zm18 0c0-8 4-14 12-18l2 3c-5 3-7 6-7 9h5v10H28z"/></svg>
+        <blockquote id="quoteText"></blockquote>
+        <figcaption id="quoteAuthor"></figcaption>
+        <p class="closing-question">¿Mis decisiones contribuyen realmente a construir la paz?</p>
+      </figure>
+
+      <div class="result-actions reveal" style="--d:7">
+        <button id="btnShare" class="btn btn-primary" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>
+          <span>Compartir resultado</span>
+        </button>
+        <button id="btnDownload" class="btn btn-ghost" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>
+          <span>Descargar tarjeta</span>
+        </button>
+        <button id="btnRestart" class="btn btn-ghost" type="button">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 1 0 2.3-5.6M4 4v4h4"/></svg>
+          <span>Repetir evaluación</span>
+        </button>
+      </div>
+
+      <p class="disclaimer">
+        Este resultado es <strong>orientativo y educativo</strong>. Refleja tus respuestas en un momento concreto,
+        no define quién eres: ser agente de paz es un aprendizaje continuo que se practica todos los días.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Proyecto académico · Violencia y Construcción de Paz · Inspirado en la cultura de paz (UNESCO) y en los aportes de Johan Galtung.</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
